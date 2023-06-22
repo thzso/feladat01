@@ -33,7 +33,7 @@ function feladat01(szinek) {
       }
     }
   }
-  return combinations;
+  return szinek.length <=1 ? 0 : combinations.length;
 }
 
 const checkIfContains = (arr1, arr2) => {
@@ -51,3 +51,4 @@ const checkIfContains = (arr1, arr2) => {
 
   return contains.length === arr1.length;
 };
+
